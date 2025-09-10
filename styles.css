@@ -156,19 +156,19 @@ body {
 .gradient-stop-1 {
   stop-color: var(--accent-text);
   stop-opacity: 0.8;
-  animation: gradient-shift-1 4s ease-in-out infinite alternate;
+  animation: gradient-shift-1 10s ease-in-out infinite alternate;
 }
 
 .gradient-stop-2 {
   stop-color: var(--mint);
   stop-opacity: 0.6;
-  animation: gradient-shift-2 4s ease-in-out infinite alternate;
+  animation: gradient-shift-2 10s ease-in-out infinite alternate;
 }
 
 .gradient-stop-3 {
   stop-color: var(--coral);
   stop-opacity: 0.4;
-  animation: gradient-shift-3 4s ease-in-out infinite alternate;
+  animation: gradient-shift-3 10s ease-in-out infinite alternate;
 }
 
 @keyframes gradient-shift-1 {
@@ -200,19 +200,19 @@ body {
 
 .letter-gradient-1 {
   stop-color: var(--accent-text);
-  animation: letter-gradient-flow 6s ease-in-out infinite;
+  animation: letter-gradient-flow 15s ease-in-out infinite;
 }
 
 .letter-gradient-2 {
   stop-color: var(--mint);
-  animation: letter-gradient-flow 6s ease-in-out infinite;
-  animation-delay: 2s;
+  animation: letter-gradient-flow 15s ease-in-out infinite;
+  animation-delay: 5s;
 }
 
 .letter-gradient-3 {
   stop-color: var(--coral);
-  animation: letter-gradient-flow 6s ease-in-out infinite;
-  animation-delay: 4s;
+  animation: letter-gradient-flow 15s ease-in-out infinite;
+  animation-delay: 10s;
 }
 
 @keyframes letter-gradient-flow {
@@ -231,7 +231,7 @@ body {
 }
 
 .logo-morph {
-  animation: logo-morph 8s ease-in-out infinite;
+  animation: logo-morph 20s ease-in-out infinite;
   transform-origin: center;
 }
 
@@ -258,22 +258,22 @@ body {
 /* Orbiting Elements */
 .logo-orbit {
   fill: var(--mint);
-  animation: orbit 10s linear infinite;
+  animation: orbit 20s linear infinite;
   transform-origin: 60px 24px;
 }
 
 .logo-orbit-1 {
-  animation-duration: 8s;
+  animation-duration: 16s;
 }
 .logo-orbit-2 {
-  animation-duration: 12s;
+  animation-duration: 24s;
   animation-direction: reverse;
 }
 .logo-orbit-3 {
-  animation-duration: 15s;
+  animation-duration: 30s;
 }
 .logo-orbit-4 {
-  animation-duration: 6s;
+  animation-duration: 12s;
   animation-direction: reverse;
 }
 
@@ -289,24 +289,24 @@ body {
 /* Floating Shapes */
 .logo-float {
   fill: var(--accent-text);
-  animation: float 6s ease-in-out infinite;
+  animation: float 12s ease-in-out infinite;
 }
 
 .logo-float-1 {
   animation-delay: 0s;
-  animation-duration: 8s;
+  animation-duration: 16s;
 }
 .logo-float-2 {
-  animation-delay: 1s;
-  animation-duration: 6s;
+  animation-delay: 2s;
+  animation-duration: 12s;
 }
 .logo-float-3 {
-  animation-delay: 2s;
-  animation-duration: 10s;
+  animation-delay: 4s;
+  animation-duration: 20s;
 }
 .logo-float-4 {
-  animation-delay: 3s;
-  animation-duration: 7s;
+  animation-delay: 6s;
+  animation-duration: 14s;
 }
 
 @keyframes float {
@@ -348,9 +348,7 @@ body {
 }
 
 .letter-group:hover .logo-letter {
-  fill: var(--coral);
   font-size: 22;
-  filter: drop-shadow(0 0 8px currentColor);
 }
 
 .logo-letter {
@@ -364,32 +362,32 @@ body {
 /* Dynamic Particles */
 .logo-particle {
   fill: var(--mint);
-  animation: particle-dance 3s ease-in-out infinite;
+  animation: particle-dance 8s ease-in-out infinite;
 }
 
 .logo-particle-1 {
   animation-delay: 0s;
-  animation-duration: 4s;
+  animation-duration: 12s;
 }
 .logo-particle-2 {
-  animation-delay: 0.5s;
-  animation-duration: 3.5s;
+  animation-delay: 1s;
+  animation-duration: 10s;
 }
 .logo-particle-3 {
-  animation-delay: 1s;
-  animation-duration: 4.5s;
+  animation-delay: 2s;
+  animation-duration: 14s;
 }
 .logo-particle-4 {
-  animation-delay: 1.5s;
-  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-duration: 8s;
 }
 .logo-particle-5 {
-  animation-delay: 2s;
-  animation-duration: 5s;
+  animation-delay: 4s;
+  animation-duration: 16s;
 }
 .logo-particle-6 {
-  animation-delay: 2.5s;
-  animation-duration: 3.8s;
+  animation-delay: 5s;
+  animation-duration: 11s;
 }
 
 @keyframes particle-dance {
@@ -412,41 +410,6 @@ body {
   }
 }
 
-/* Energy Waves */
-.logo-wave {
-  stroke: var(--accent-text);
-  fill: none;
-  animation: wave-pulse 2s ease-out infinite;
-}
-
-.logo-wave-1 {
-  animation-delay: 0s;
-}
-.logo-wave-2 {
-  animation-delay: 0.3s;
-}
-.logo-wave-3 {
-  animation-delay: 0.6s;
-}
-
-@keyframes wave-pulse {
-  0% {
-    r: 20;
-    opacity: 0.6;
-    stroke-width: 2;
-  }
-  50% {
-    r: 35;
-    opacity: 0.3;
-    stroke-width: 1;
-  }
-  100% {
-    r: 50;
-    opacity: 0;
-    stroke-width: 0.5;
-  }
-}
-
 /* Container Hover Effects */
 .logo-container:hover .logo-bg-main {
   opacity: 0.2;
@@ -460,7 +423,7 @@ body {
 
 .logo-container:hover .logo-float {
   fill: var(--sherbet);
-  animation-duration: 2s;
+  animation-duration: 4s;
 }
 
 .logo-container:hover .logo-path {
@@ -481,12 +444,7 @@ body {
 
 .logo-container:hover .logo-particle {
   fill: var(--coral);
-  animation-duration: 1s;
-}
-
-.logo-container:hover .logo-wave {
-  opacity: 0.4;
-  animation-duration: 0.8s;
+  animation-duration: 3s;
 }
 
 /* Hover effect for letters */
