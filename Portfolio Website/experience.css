@@ -1,0 +1,239 @@
+/* Experience Page Specific Styles */
+
+.experience-page {
+  padding-top: 80px;
+  background: var(--primary-bg);
+}
+
+.experience-header {
+  text-align: center;
+  padding: var(--spacing-3xl) 0 var(--spacing-xl) 0;
+  margin-bottom: var(--spacing-2xl);
+}
+
+.page-title {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  color: var(--primary-text);
+  margin-bottom: var(--spacing-base);
+}
+
+.page-subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--secondary-text);
+  font-weight: 400;
+}
+
+.experience-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.experience-card {
+  background: var(--secondary-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-2xl);
+  margin-bottom: var(--spacing-3xl);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-base);
+}
+
+.experience-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--spacing-xl);
+}
+
+.job-info {
+  flex: 1;
+}
+
+.job-title {
+  font-size: var(--font-size-2xl);
+  font-weight: 600;
+  color: var(--primary-text);
+  margin-bottom: var(--spacing-sm);
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.company-name {
+  font-size: var(--font-size-lg);
+  color: var(--accent-text);
+  font-weight: 500;
+}
+
+.job-duration,
+.job-location {
+  font-size: var(--font-size-sm);
+  color: var(--secondary-text);
+  font-weight: 500;
+}
+
+.job-description {
+  font-size: var(--font-size-base);
+  color: var(--secondary-text);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-base);
+  background: var(--primary-bg);
+  border-radius: var(--radius-base);
+  border-left: 4px solid var(--accent-text);
+}
+
+.responsibilities-section,
+.technologies-section,
+.achievements-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.responsibilities-section h4,
+.technologies-section h4,
+.achievements-section h4 {
+  font-size: var(--font-size-lg);
+  color: var(--accent-text);
+  margin-bottom: var(--spacing-base);
+  font-weight: 600;
+}
+
+.responsibilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.responsibility-item {
+  display: flex;
+  gap: var(--spacing-base);
+  align-items: flex-start;
+  padding: var(--spacing-base);
+  background: var(--primary-bg);
+  border-radius: var(--radius-base);
+  transition: all var(--transition-fast);
+}
+
+.responsibility-item:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-sm);
+}
+
+.responsibility-icon {
+  font-size: var(--font-size-xl);
+  min-width: 30px;
+  text-align: center;
+}
+
+.responsibility-item h5 {
+  font-size: var(--font-size-base);
+  color: var(--primary-text);
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+}
+
+.responsibility-item p {
+  font-size: var(--font-size-sm);
+  color: var(--secondary-text);
+  line-height: 1.6;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.tech-tag {
+  padding: var(--spacing-xs) var(--spacing-base);
+  background: var(--accent-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--secondary-text);
+  transition: all var(--transition-fast);
+}
+
+.tech-tag:hover {
+  background: var(--accent-text);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.achievements-list {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements-list li {
+  position: relative;
+  padding-left: var(--spacing-xl);
+  margin-bottom: var(--spacing-base);
+  color: var(--secondary-text);
+  line-height: 1.6;
+}
+
+.achievements-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent-text);
+  font-weight: bold;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .experience-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--spacing-base);
+  }
+  
+  .experience-card {
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+  }
+  
+  .responsibilities-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-base);
+  }
+  
+  .job-title {
+    font-size: var(--font-size-xl);
+  }
+  
+  .company-name {
+    font-size: var(--font-size-base);
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: var(--font-size-2xl);
+  }
+  
+  .page-subtitle {
+    font-size: var(--font-size-base);
+  }
+  
+  .experience-card {
+    padding: var(--spacing-base);
+  }
+  
+  .job-title {
+    font-size: var(--font-size-lg);
+  }
+}

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shvetam Kumar Gumber - Lead Backend Developer</title>
+    <meta name="description" content="Lead Backend Developer with 9+ years of experience in TypeScript, Node.js, JavaScript, PostgreSQL, and GraphQL">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Creative Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <svg class="loader-logo" width="80" height="80" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="45" stroke="#2563eb" stroke-width="8" fill="none" stroke-dasharray="283" stroke-dashoffset="283" class="loader-circle"/>
+                <text x="50" y="58" text-anchor="middle" class="loader-text">SKG</text>
+            </svg>
+            <div class="loading-text">Loading Creative Experience...</div>
+        </div>
+    </div>
+
+    <!-- Animated Background Elements -->
+    <div class="bg-animation">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg class="logo-svg" width="50" height="50" viewBox="0 0 100 100">
+                    <defs>
+                        <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#667eea"/>
+                            <stop offset="100%" stop-color="#764ba2"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="50" cy="50" r="45" fill="url(#logoGradient)" class="logo-circle"/>
+                    <text x="50" y="58" text-anchor="middle" class="logo-text-svg" fill="white" font-weight="bold" font-size="16">SKG</text>
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="#667eea" stroke-width="2" class="logo-ring" stroke-dasharray="283" stroke-dashoffset="283"/>
+                </svg>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Shvetam Kumar Gumber</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Lead Backend Developer</h2>
+                    <p class="hero-description">
+                        Skilled and experienced Lead Backend Software Developer with 9+ years of expertise in 
+                        TypeScript, Node.js, JavaScript, PostgreSQL, and GraphQL. Proven proficiency in architecting, 
+                        developing, and optimizing backend systems.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#experience" class="btn btn-secondary">View Work</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="photo.png" alt="Shvetam Kumar Gumber" class="profile-image">
+                        <div class="image-decoration"></div>
+                        <svg class="profile-decoration" width="400" height="400" viewBox="0 0 400 400">
+                            <defs>
+                                <filter id="glow">
+                                    <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                                    <feMerge>
+                                        <feMergeNode in="coloredBlur"/>
+                                        <feMergeNode in="SourceGraphic"/>
+                                    </feMerge>
+                                </filter>
+                            </defs>
+                            <circle cx="200" cy="200" r="180" fill="none" stroke="url(#logoGradient)" stroke-width="3" class="profile-ring-1" opacity="0.6"/>
+                            <circle cx="200" cy="200" r="190" fill="none" stroke="#f59e0b" stroke-width="2" class="profile-ring-2" opacity="0.4" stroke-dasharray="20 10"/>
+                            <circle cx="200" cy="200" r="170" fill="none" stroke="#2563eb" stroke-width="1" class="profile-ring-3" opacity="0.3" stroke-dasharray="5 5"/>
+                        </svg>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="tech-icon tech-icon-1" data-tech="TypeScript">TS</div>
+                        <div class="tech-icon tech-icon-2" data-tech="Node.js">NODE</div>
+                        <div class="tech-icon tech-icon-3" data-tech="GraphQL">GQL</div>
+                        <div class="tech-icon tech-icon-4" data-tech="PostgreSQL">PG</div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am a passionate Lead Backend Developer with over 9 years of experience building scalable, 
+                        high-performance backend systems. My expertise spans across modern technologies including 
+                        TypeScript, Node.js, JavaScript, PostgreSQL, and GraphQL.
+                    </p>
+                    <p>
+                        Throughout my career, I've demonstrated proven proficiency in architecting, developing, and 
+                        optimizing backend systems, including database design, API development, and performance tuning. 
+                        I'm adept at ensuring security, scalability, and code quality, with a strong commitment to 
+                        best practices and continuous learning.
+                    </p>
+                    <p>
+                        I excel in mentoring teams, collaborating with stakeholders, and contributing to the success 
+                        of complex software projects. My approach combines technical expertise with strong leadership 
+                        and communication skills.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>9+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3</h3>
+                        <p>Companies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Lead Backend Developer</h3>
+                        <h4>Beryllium Ventures Pte. Ltd (Sixer Game), Remote</h4>
+                        <span class="timeline-date">2018 - Present</span>
+                        <ul>
+                            <li>Collaborate with frontend developers, product managers, and stakeholders to understand requirements and ensure seamless integration</li>
+                            <li>Provide guidance and mentorship to junior developers, sharing best practices and fostering skill development</li>
+                            <li>Enforce code quality standards, conduct code reviews, and implement testing strategies to ensure software reliability</li>
+                            <li>Collaborate with DevOps engineers to define deployment processes and ensure smooth, reliable deployments</li>
+                            <li>Design backend systems to handle increasing loads with horizontal and vertical scaling strategies</li>
+                            <li>Identify and address performance bottlenecks in both codebase and database for responsive applications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Senior .Net Developer / Node.JS Developer</h3>
+                        <h4>Sphinx Solution Pvt Ltd, Pune</h4>
+                        <span class="timeline-date">2016 - 2018</span>
+                        <ul>
+                            <li>Developed and maintained RESTful or GraphQL APIs, handling data processing, authentication, and authorization</li>
+                            <li>Implemented security best practices including data encryption, authentication, and authorization mechanisms</li>
+                            <li>Stayed up-to-date with latest trends and technologies in backend development using .Net C#, Node.js, TypeScript</li>
+                            <li>Understanding of web services concepts, including RESTful and SOAP APIs</li>
+                            <li>Oversaw design, maintenance, and optimization of PostgreSQL database for efficient data storage and retrieval</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Junior Developer</h3>
+                        <h4>LaNet Team Software Solutions Pvt Ltd, Surat</h4>
+                        <span class="timeline-date">2014 - 2016</span>
+                        <ul>
+                            <li>Identified and resolved technical issues, bugs, and system failures promptly to maintain reliable applications</li>
+                            <li>Managed code versioning using Git workflows and ensured codebase organization and maintainability</li>
+                            <li>Implemented monitoring solutions to track system performance and detect anomalies</li>
+                            <li>Gained familiarity with web development concepts, HTML, CSS, and JavaScript for frontend integration</li>
+                            <li>Developed basic knowledge of ASP.NET for web application development</li>
+                            <li>Applied strong problem-solving skills to address technical challenges and optimize code</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Backend Technologies</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">TypeScript</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">RESTful APIs</span>
+                        <span class="skill-item">GraphQL</span>
+                        <span class="skill-item">.NET Core</span>
+                        <span class="skill-item">C#</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">Hasura</span>
+                        <span class="skill-item">Database Modeling</span>
+                        <span class="skill-item">Performance Tuning</span>
+                        <span class="skill-item">Query Optimization</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Development Practices</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Team Collaboration</span>
+                        <span class="skill-item">Mentorship</span>
+                        <span class="skill-item">Code Reviews</span>
+                        <span class="skill-item">Testing Strategies</span>
+                        <span class="skill-item">DevOps Integration</span>
+                        <span class="skill-item">Performance Monitoring</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Architecture & Design</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">System Architecture</span>
+                        <span class="skill-item">Scalability</span>
+                        <span class="skill-item">Security</span>
+                        <span class="skill-item">API Design</span>
+                        <span class="skill-item">Microservices</span>
+                        <span class="skill-item">Load Balancing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Sixer Game</h3>
+                        <a href="https://sixergame.com" class="project-link" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="project-description">
+                        Revolutionary fantasy game where you can buy and sell fantasy stocks in cricket players. 
+                        Built with modern backend architecture handling real-time data processing.
+                    </p>
+                    <div class="project-tech">
+                        <span>TypeScript</span>
+                        <span>Node.js</span>
+                        <span>GraphQL</span>
+                        <span>PostgreSQL</span>
+                        <span>Hasura</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>YouFirst</h3>
+                        <a href="https://youfirst.co.in/" class="project-link" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="project-description">
+                        Banking and financial domain project providing reloadable cards, gift cards, and vouchers 
+                        for 50+ products. Scalable backend system with secure payment processing.
+                    </p>
+                    <div class="project-tech">
+                        <span>Node.js</span>
+                        <span>JavaScript</span>
+                        <span>MSSql</span>
+                        <span>Payment APIs</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>MyFundBucket</h3>
+                        <a href="https://www.myfundbucket.com" class="project-link" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="project-description">
+                        Financial platform helping users apply for loans with different money lending institutes 
+                        to get the best interest rates. Built with robust backend for financial data processing.
+                    </p>
+                    <div class="project-tech">
+                        <span>C#</span>
+                        <span>MVC 4.0</span>
+                        <span>JavaScript</span>
+                        <span>AJAX</span>
+                        <span>jQuery</span>
+                        <span>HTML/CSS</span>
+                        <span>MSSql</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>
+                        I'm always interested in hearing about new opportunities and exciting projects. 
+                        Whether you're looking for a lead backend developer or want to discuss a potential collaboration, 
+                        I'd love to hear from you.
+                    </p>
+                </div>
+                <div class="contact-info">
+                    <a href="mailto:shvetamgumber@outlook.com" class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <span>shvetamgumber@outlook.com</span>
+                    </a>
+                    <a href="tel:+918128671002" class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                        <span>+91 812 867 1002</span>
+                    </a>
+                    <a href="https://linkedin.com/in/shvetam-kumar" class="contact-item" target="_blank">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+                            <rect x="2" y="9" width="4" height="12"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                    <div class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Hyderabad, India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Shvetam Kumar Gumber. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive Cursor -->
+    <div class="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shvetam Kumar Gumber - Lead Backend Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home" class="logo-container">
+                    <svg class="logo-svg" viewBox="0 0 120 48" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Animated background gradient -->
+                        <defs>
+                            <radialGradient id="bgGradient" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" class="gradient-stop-1"/>
+                                <stop offset="50%" class="gradient-stop-2"/>
+                                <stop offset="100%" class="gradient-stop-3"/>
+                            </radialGradient>
+                            <linearGradient id="letterGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" class="letter-gradient-1"/>
+                                <stop offset="50%" class="letter-gradient-2"/>
+                                <stop offset="100%" class="letter-gradient-3"/>
+                            </linearGradient>
+                            <filter id="glow">
+                                <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                                <feMerge> 
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        
+                        <!-- Interactive background elements -->
+                        <circle class="logo-bg-main logo-morph" cx="60" cy="24" r="18" fill="url(#bgGradient)" opacity="0.1"/>
+                        <circle class="logo-orbit logo-orbit-1" cx="45" cy="15" r="3" opacity="0.6"/>
+                        <circle class="logo-orbit logo-orbit-2" cx="75" cy="33" r="2.5" opacity="0.5"/>
+                        <circle class="logo-orbit logo-orbit-3" cx="30" cy="35" r="2" opacity="0.4"/>
+                        <circle class="logo-orbit logo-orbit-4" cx="90" cy="13" r="1.5" opacity="0.3"/>
+                        
+                        <!-- Floating geometric shapes -->
+                        <polygon class="logo-float logo-float-1" points="15,10 20,15 15,20 10,15" opacity="0.2"/>
+                        <polygon class="logo-float logo-float-2" points="105,8 110,13 105,18 100,13" opacity="0.15"/>
+                        <rect class="logo-float logo-float-3" x="8" y="35" width="4" height="4" rx="1" opacity="0.1"/>
+                        <rect class="logo-float logo-float-4" x="108" y="36" width="3" height="3" rx="1" opacity="0.1"/>
+                        
+                        <!-- Interactive connection paths -->
+                        <path class="logo-path logo-path-1" d="M15 25 Q35 20 55 25" stroke-width="1" fill="none" opacity="0"/>
+                        <path class="logo-path logo-path-2" d="M65 25 Q85 20 105 25" stroke-width="1" fill="none" opacity="0"/>
+                        <path class="logo-path logo-path-3" d="M10 15 Q60 10 110 15" stroke-width="0.5" fill="none" opacity="0"/>
+                        
+                        <!-- Clickable letter containers with hover zones -->
+                        <g class="letter-group letter-group-s">
+                            <circle class="letter-hover-zone" cx="10" cy="28" r="8" opacity="0"/>
+                            <text class="logo-letter logo-letter-s" x="10" y="32" text-anchor="middle" font-size="18" filter="url(#glow)">s</text>
+                        </g>
+                        <g class="letter-group letter-group-h">
+                            <circle class="letter-hover-zone" cx="25" cy="28" r="8" opacity="0"/>
+                            <text class="logo-letter logo-letter-h" x="25" y="32" text-anchor="middle" font-size="18" filter="url(#glow)">h</text>
+                        </g>
+                        <g class="letter-group letter-group-v">
+                            <circle class="letter-hover-zone" cx="40" cy="28" r="8" opacity="0"/>
+                            <text class="logo-letter logo-letter-v" x="40" y="32" text-anchor="middle" font-size="18" filter="url(#glow)">v</text>
+                        </g>
+                        <g class="letter-group letter-group-e">
+                            <circle class="letter-hover-zone" cx="55" cy="28" r="8" opacity="0"/>
+                            <text class="logo-letter logo-letter-e" x="55" y="32" text-anchor="middle" font-size="18" filter="url(#glow)">e</text>
+                        </g>
+                        <g class="letter-group letter-group-t">
+                            <circle class="letter-hover-zone" cx="70" cy="28" r="8" opacity="0"/>
+                            <text class="logo-letter logo-letter-t" x="70" y="32" text-anchor="middle" font-size="18" filter="url(#glow)">t</text>
+                        </g>
+                        <g class="letter-group letter-group-a">
+                            <circle class="letter-hover-zone" cx="85" cy="28" r="8" opacity="0"/>
+                            <text class="logo-letter logo-letter-a" x="85" y="32" text-anchor="middle" font-size="18" filter="url(#glow)">a</text>
+                        </g>
+                        <g class="letter-group letter-group-m">
+                            <circle class="letter-hover-zone" cx="100" cy="28" r="8" opacity="0"/>
+                            <text class="logo-letter logo-letter-m" x="100" y="32" text-anchor="middle" font-size="18" filter="url(#glow)">m</text>
+                        </g>
+                        
+                        <!-- Dynamic accent particles -->
+                        <circle class="logo-particle logo-particle-1" cx="60" cy="12" r="2"/>
+                        <circle class="logo-particle logo-particle-2" cx="20" cy="38" r="1.5"/>
+                        <circle class="logo-particle logo-particle-3" cx="80" cy="38" r="1.5"/>
+                        <circle class="logo-particle logo-particle-4" cx="100" cy="12" r="1"/>
+                        <circle class="logo-particle logo-particle-5" cx="10" cy="10" r="0.8"/>
+                        <circle class="logo-particle logo-particle-6" cx="110" cy="38" r="0.8"/>
+                        
+                        <!-- Interactive energy waves -->
+                        <circle class="logo-wave logo-wave-1" cx="60" cy="24" r="25" fill="none" stroke-width="0.5" opacity="0"/>
+                        <circle class="logo-wave logo-wave-2" cx="60" cy="24" r="35" fill="none" stroke-width="0.3" opacity="0"/>
+                        <circle class="logo-wave logo-wave-3" cx="60" cy="24" r="45" fill="none" stroke-width="0.2" opacity="0"/>
+                    </svg>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <span class="theme-toggle-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-line">Hi, I'm</span>
+                        <span class="title-line hero-name">Shvetam Kumar Gumber</span>
+                        <span class="title-line hero-subtitle">Lead Backend Developer</span>
+                    </h1>
+                    <p class="hero-description">
+                        Skilled and experienced Lead Backend Software Developer with nine years of 
+                        expertise in TypeScript, Node.js, JavaScript, PostgreSQL, and GraphQL. 
+                        Passionate about architecting scalable systems and mentoring teams.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Get in touch</a>
+                        <a href="#experience" class="btn btn-secondary">View my work</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="photo.png" alt="Shvetam Kumar Gumber" class="profile-image">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span class="scroll-text">Scroll to explore</span>
+                <div class="scroll-indicator"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a passionate Lead Backend Developer with over 9 years of experience building 
+                            robust, scalable systems. Currently based in Hyderabad, India, I specialize in 
+                            backend architecture, API development, and team leadership.
+                        </p>
+                        <p>
+                            My expertise spans across modern backend technologies including Node.js, TypeScript, 
+                            PostgreSQL, and GraphQL. I have a proven track record of collaborating with 
+                            cross-functional teams and delivering high-quality software solutions.
+                        </p>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h3>Backend Technologies</h3>
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>TypeScript</li>
+                                    <li>JavaScript</li>
+                                    <li>RESTful APIs</li>
+                                    <li>GraphQL</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Databases</h3>
+                                <ul>
+                                    <li>PostgreSQL</li>
+                                    <li>Hasura</li>
+                                    <li>Database Modeling</li>
+                                    <li>Performance Optimization</li>
+                                </ul>
+                            </div>
+                            <div class="skill-category">
+                                <h3>Leadership & Collaboration</h3>
+                                <ul>
+                                    <li>Team Mentorship</li>
+                                    <li>Code Reviews</li>
+                                    <li>DevOps Collaboration</li>
+                                    <li>Dependency Management</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <p class="section-description">9+ years of backend development expertise across diverse domains</p>
+                
+                <div class="experience-summary">
+                    <div class="experience-card-mini" data-job="lead-backend">
+                        <div class="job-mini-header">
+                            <h3 class="job-mini-title">Lead Backend Developer</h3>
+                            <span class="job-mini-duration">2018 - Present</span>
+                            <span class="current-badge-mini">Current</span>
+                        </div>
+                        <div class="job-mini-company">Beryllium Ventures Pte. Ltd (Sixer Game)</div>
+                        <p class="job-mini-summary">Leading backend development for fantasy sports platform, architecting scalable systems and mentoring teams.</p>
+                        <div class="job-mini-tech">
+                            <span class="tech-tag-mini">Node.js</span>
+                            <span class="tech-tag-mini">PostgreSQL</span>
+                            <span class="tech-tag-mini">GraphQL</span>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-details">View Details →</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-card-mini" data-job="senior-developer">
+                        <div class="job-mini-header">
+                            <h3 class="job-mini-title">Senior .Net Developer / Node.JS Developer</h3>
+                            <span class="job-mini-duration">2016 - 2018</span>
+                        </div>
+                        <div class="job-mini-company">Sphinx Solution Pvt Ltd, Pune</div>
+                        <p class="job-mini-summary">Developed secure, scalable web applications and APIs using .NET framework and Node.js technologies.</p>
+                        <div class="job-mini-tech">
+                            <span class="tech-tag-mini">.NET Core</span>
+                            <span class="tech-tag-mini">C#</span>
+                            <span class="tech-tag-mini">PostgreSQL</span>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-details">View Details →</span>
+                        </div>
+                    </div>
+
+                    <div class="experience-card-mini" data-job="junior-developer">
+                        <div class="job-mini-header">
+                            <h3 class="job-mini-title">Junior Developer</h3>
+                            <span class="job-mini-duration">2014 - 2016</span>
+                        </div>
+                        <div class="job-mini-company">LaNet Team Software Solutions Pvt Ltd, Surat</div>
+                        <p class="job-mini-summary">Started professional journey focusing on core development concepts, troubleshooting, and web development fundamentals.</p>
+                        <div class="job-mini-tech">
+                            <span class="tech-tag-mini">JavaScript</span>
+                            <span class="tech-tag-mini">ASP.NET</span>
+                            <span class="tech-tag-mini">SQL</span>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="view-details">View Details →</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-cta">
+                    <a href="experience.html" class="btn btn-primary">View Complete Work History</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Recent Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">Sixer Game</h3>
+                            <a href="https://sixergame.com" class="project-link" target="_blank">Visit Site</a>
+                        </div>
+                        <p class="project-description">
+                            Sixer is a revolutionary fantasy game where you can buy and sell fantasy stocks 
+                            in cricket players. Built with modern backend architecture to handle real-time 
+                            gaming and financial transactions.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">GraphQL</span>
+                            <span class="tech-tag">Hasura</span>
+                            <span class="tech-tag">orgcDB</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">YouFirst</h3>
+                            <a href="https://youfirst.co.in/" class="project-link" target="_blank">Visit Site</a>
+                        </div>
+                        <p class="project-description">
+                            YouFirst is a banking and financial domain project that provides reloadable cards, 
+                            gift cards, and vouchers. Built with scalable architecture to handle financial 
+                            transactions securely.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.JS</span>
+                            <span class="tech-tag">Javascript</span>
+                            <span class="tech-tag">MSSql</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3 class="project-title">MyFundBucket</h3>
+                            <a href="https://www.myfundbucket.com" class="project-link" target="_blank">Visit Site</a>
+                        </div>
+                        <p class="project-description">
+                            MyFundBucket helps you apply loans to many different money lending institutes 
+                            and get the best interest rate from the market. Designed with robust backend 
+                            systems for financial data processing.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">MVC 4.0</span>
+                            <span class="tech-tag">Javascript</span>
+                            <span class="tech-tag">AJAX</span>
+                            <span class="tech-tag">JQuery</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">MSSql</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Let's Work Together</h2>
+                <div class="contact-content">
+                    <div class="contact-text">
+                        <p>
+                            I'm always interested in hearing about new opportunities and challenges. 
+                            Whether you're looking for a lead developer, need consultation on backend 
+                            architecture, or just want to chat about technology, I'd love to hear from you.
+                        </p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-label">Email</span>
+                            <a href="mailto:shvetamgumber@outlook.com" class="contact-value">shvetamgumber@outlook.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone</span>
+                            <a href="tel:+918128671002" class="contact-value">+91 8128671002</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">Hyderabad, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">LinkedIn</span>
+                            <a href="https://linkedin.com/in/shvetam" class="contact-value" target="_blank">Connect with me</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">GitHub</span>
+                            <a href="https://github.com/shvetamKumar" class="contact-value" target="_blank">View my code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Shvetam Kumar Gumber. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
