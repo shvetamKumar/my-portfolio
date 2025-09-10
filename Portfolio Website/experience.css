@@ -1,14 +1,14 @@
 /* Experience Page Specific Styles */
 
 .experience-page {
-  padding-top: 80px;
+  padding-top: 60px;
   background: var(--primary-bg);
 }
 
 .experience-header {
   text-align: center;
-  padding: var(--spacing-3xl) 0 var(--spacing-xl) 0;
-  margin-bottom: var(--spacing-2xl);
+  padding: var(--spacing-base) 0 var(--spacing-xs) 0;
+  margin-bottom: var(--spacing-sm);
 }
 
 .page-title {
@@ -33,8 +33,8 @@
   background: var(--secondary-bg);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-xl);
-  padding: var(--spacing-2xl);
-  margin-bottom: var(--spacing-3xl);
+  padding: var(--spacing-base);
+  margin-bottom: var(--spacing-lg);
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-base);
 }
@@ -44,11 +44,11 @@
   transform: translateY(-2px);
 }
 
-.experience-header {
+.experience-card .experience-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-xs);
 }
 
 .job-info {
@@ -84,9 +84,9 @@
 .job-description {
   font-size: var(--font-size-base);
   color: var(--secondary-text);
-  line-height: 1.7;
-  margin-bottom: var(--spacing-xl);
-  padding: var(--spacing-base);
+  line-height: 1.5;
+  margin-bottom: var(--spacing-base);
+  padding: var(--spacing-sm);
   background: var(--primary-bg);
   border-radius: var(--radius-base);
   border-left: 4px solid var(--accent-text);
@@ -95,29 +95,29 @@
 .responsibilities-section,
 .technologies-section,
 .achievements-section {
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-base);
 }
 
 .responsibilities-section h4,
 .technologies-section h4,
 .achievements-section h4 {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-base);
   color: var(--accent-text);
-  margin-bottom: var(--spacing-base);
+  margin-bottom: var(--spacing-xs);
   font-weight: 600;
 }
 
 .responsibilities-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-lg);
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-sm);
 }
 
 .responsibility-item {
   display: flex;
-  gap: var(--spacing-base);
+  gap: var(--spacing-xs);
   align-items: flex-start;
-  padding: var(--spacing-base);
+  padding: var(--spacing-xs);
   background: var(--primary-bg);
   border-radius: var(--radius-base);
   transition: all var(--transition-fast);
@@ -135,16 +135,16 @@
 }
 
 .responsibility-item h5 {
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-sm);
   color: var(--primary-text);
   font-weight: 600;
-  margin-bottom: var(--spacing-xs);
+  margin-bottom: 2px;
 }
 
 .responsibility-item p {
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
   color: var(--secondary-text);
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 .tech-tags {
@@ -155,17 +155,17 @@
 
 .tech-tag {
   padding: var(--spacing-xs) var(--spacing-base);
-  background: var(--accent-bg);
+  background: rgba(156, 163, 175, 0.8);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-base);
   font-size: var(--font-size-sm);
   font-weight: 500;
-  color: var(--secondary-text);
+  color: white;
   transition: all var(--transition-fast);
 }
 
 .tech-tag:hover {
-  background: var(--accent-text);
+  background: rgba(107, 114, 128, 0.9);
   color: white;
   transform: translateY(-1px);
 }
@@ -177,10 +177,11 @@
 
 .achievements-list li {
   position: relative;
-  padding-left: var(--spacing-xl);
-  margin-bottom: var(--spacing-base);
+  padding-left: var(--spacing-base);
+  margin-bottom: var(--spacing-xs);
   color: var(--secondary-text);
-  line-height: 1.6;
+  line-height: 1.4;
+  font-size: var(--font-size-sm);
 }
 
 .achievements-list li::before {
@@ -192,48 +193,91 @@
   font-weight: bold;
 }
 
+/* Add a more compact layout for sections */
+.compact-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-base);
+  align-items: start;
+}
+
+.compact-sections .technologies-section,
+.compact-sections .achievements-section {
+  margin-bottom: 0;
+}
+
+/* Optimize tech tags layout */
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+}
+
+.tech-tag {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: rgba(156, 163, 175, 0.8);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-base);
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+  color: white;
+  transition: all var(--transition-fast);
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .experience-header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: var(--spacing-base);
+    gap: var(--spacing-xs);
   }
-  
+
   .experience-card {
-    padding: var(--spacing-lg);
-    margin-bottom: var(--spacing-2xl);
+    padding: var(--spacing-sm);
+    margin-bottom: var(--spacing-base);
   }
-  
+
+  .compact-sections {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+
   .responsibilities-grid {
     grid-template-columns: 1fr;
-    gap: var(--spacing-base);
+    gap: var(--spacing-xs);
   }
-  
+
   .job-title {
-    font-size: var(--font-size-xl);
+    font-size: var(--font-size-lg);
   }
-  
+
   .company-name {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-sm);
+  }
+}
+
+@media (max-width: 600px) {
+  .responsibilities-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--spacing-xs);
   }
 }
 
 @media (max-width: 480px) {
   .page-title {
-    font-size: var(--font-size-2xl);
+    font-size: var(--font-size-xl);
   }
-  
+
   .page-subtitle {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-sm);
   }
-  
+
   .experience-card {
-    padding: var(--spacing-base);
+    padding: var(--spacing-xs);
   }
-  
+
   .job-title {
-    font-size: var(--font-size-lg);
+    font-size: var(--font-size-base);
   }
 }
