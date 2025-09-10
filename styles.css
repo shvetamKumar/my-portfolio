@@ -1801,7 +1801,14 @@ section {
   }
 
   .hero {
-    padding: var(--spacing-2xl) var(--spacing-base);
+    padding-top: calc(110px + var(--spacing-xl));
+    padding-bottom: var(--spacing-2xl);
+    padding-left: var(--spacing-base);
+    padding-right: var(--spacing-base);
+  }
+
+  .hero-scroll {
+    display: none;
   }
 
   .projects-grid {
@@ -1884,7 +1891,10 @@ section {
   }
 
   .hero {
-    padding: var(--spacing-xl) var(--spacing-base);
+    padding-top: calc(100px + var(--spacing-base));
+    padding-bottom: var(--spacing-xl);
+    padding-left: var(--spacing-base);
+    padding-right: var(--spacing-base);
     min-height: auto;
   }
 
@@ -1892,11 +1902,14 @@ section {
     gap: var(--spacing-base);
   }
 
+  .hero-scroll {
+    display: none;
+  }
+
   .btn {
     padding: var(--spacing-sm) var(--spacing-base);
     font-size: var(--font-size-sm);
   }
-
 
   .hero-title {
     font-size: var(--font-size-2xl);
