@@ -609,7 +609,6 @@ body {
 
 .theme-toggle:hover {
   border-color: var(--mint);
-  transform: rotate(15deg);
 }
 
 /* Hero Section */
