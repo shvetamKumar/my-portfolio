@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Work Experience - Shvetam Kumar Gumber</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="experience.css" />
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'" />
+    <link rel="stylesheet" href="experience.css" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="styles.css" />
+      <link rel="stylesheet" href="experience.css" />
+    </noscript>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,6 +27,12 @@
     </noscript>
   </head>
   <body>
+    <!-- Immediate theme application to prevent flash -->
+    <script>
+      const theme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', theme);
+    </script>
+    
     <nav class="nav">
       <div class="nav-container">
         <div class="nav-logo">
@@ -455,6 +465,6 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
